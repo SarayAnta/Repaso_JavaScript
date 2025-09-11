@@ -57,3 +57,9 @@ texto.addEventListener("keydown", (e) => {
         agregarItem();
     }
 })
+
+const cambiarColor = document.getElementById("color");
+cambiarColor.addEventListener("click", () => {
+    const colorRandom = "#" + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = colorRandom;
+})
