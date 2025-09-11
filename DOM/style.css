@@ -1,3 +1,17 @@
 body {
     transition: background-color 0.5s ease;
 }
+
+#textoOculto {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.oculto {
+    opacity: 0;
+    pointer-events: none; /* para que no se pueda seleccionar ni interactuar cuando está oculto */
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}

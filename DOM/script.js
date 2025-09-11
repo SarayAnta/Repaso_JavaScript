@@ -63,3 +63,12 @@ cambiarColor.addEventListener("click", () => {
     const colorRandom = "#" + Math.floor(Math.random()*16777215).toString(16);
     document.body.style.backgroundColor = colorRandom;
 })
+
+const botonOcultar = document.getElementById("mostrarOcultar");
+const textoOculto = document.getElementById("textoOculto");
+
+botonOcultar.addEventListener("click", () => {
+    textoOculto.classList.toggle("oculto");
+})
+
+
